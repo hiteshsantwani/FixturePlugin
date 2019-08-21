@@ -1,0 +1,532 @@
+<div id="itpel" class="row">
+  <div id="ie8cc" class="cell">
+    <div id="imiat">Vessel Search
+    </div>
+    <div data-tabs="1" id="i7yoqw">
+      <nav data-tab-container="1" class="tab-container">
+      </nav>
+    </div>
+    <form class="form">
+      <div data-tooltip="Enter The Vessel Name" data-tooltip-pos="top" id="ihtw52" class="tooltip-component tooltip-component--empty">
+      </div>
+      <div class="form-group">
+        <label class="label">Vessel Name</label>
+        <input placeholder="Type here your name" class="input"/>
+      </div>
+      <div data-tooltip="Please Enter The Fixture Number" data-tooltip-pos="top" id="irvb36" class="tooltip-component tooltip-component--empty">
+      </div>
+      <div class="form-group">
+        <label class="label">Fixture Number</label>
+        <input type="email" placeholder="Type here your email" class="input"/>
+        <label class="label">C/P</label>
+      </div>
+      <div class="form-group">
+      </div>
+      <input class="input"/>
+      <label class="label">Charterer</label>
+      <input class="input"/>
+      <label class="label">Eff. Ctl</label>
+      <input class="input"/>
+      <label class="label">Lay Date</label>
+      <input class="input"/>
+      <label class="label">Cargo</label>
+      <input class="input"/>
+      <label class="label">Size</label>
+      <input class="input"/>
+      <label class="label">Status</label>
+      <input class="input"/>
+      <div class="form-group">
+        <button type="submit" class="button">Search</button>
+      </div>
+    </form>
+    <div data-tabs="1" id="iqb6dr">
+      <nav data-tab-container="1" class="tab-container">
+        <a href="#tab1" data-tab="1" class="tab">Documents</a>
+        <div>
+        </div>
+        <a href="#tab3" data-tab="1" class="tab">Notes</a>
+      </nav>
+      <div id="tab1" data-tab-content="1" class="tab-content">
+        <div id="iveemq">Tab 1 Content
+        </div>
+      </div>
+      <div id="tab2" data-tab-content="1" class="tab-content">
+        <div>Tab 2 Content
+        </div>
+      </div>
+      <div id="tab3" data-tab-content="1" class="tab-content">
+        <div>Tab 3 Content
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>var items = document.querySelectorAll('#i7yoqw');
+  for (var i = 0, len = items.length; i < len; i++) {
+    (function(){
+      var t,e=this,a="[data-tab]",n=document.body,r=n.matchesSelector||n.webkitMatchesSelector||n.mozMatchesSelector||n.msMatchesSelector,o=function(){
+        var a=e.querySelectorAll("[data-tab-content]")||[];
+        for(t=0;t<a.length;t++)a[t].style.display="none"}
+      ,i=function(n){
+        var r=e.querySelectorAll(a)||[];
+        for(t=0;t<r.length;t++){
+          var i=r[t],s=i.className.replace("tab-active","").trim();
+          i.className=s}
+        o(),n.className+=" tab-active";
+        var l=n.getAttribute("href"),c=e.querySelector(l);
+        c&&(c.style.display="")}
+      ,s=e.querySelector(".tab-active"+a);
+      s=s||e.querySelector(a),s&&i(s),e.addEventListener("click",function(t){
+        var e=t.target;
+        r.call(e,a)&&i(e)}
+                                                        )}
+     .bind(items[i]))();
+  }
+  var items = document.querySelectorAll('#iqb6dr');
+  for (var i = 0, len = items.length; i < len; i++) {
+    (function(){
+      var t,e=this,a="[data-tab]",n=document.body,r=n.matchesSelector||n.webkitMatchesSelector||n.mozMatchesSelector||n.msMatchesSelector,o=function(){
+        var a=e.querySelectorAll("[data-tab-content]")||[];
+        for(t=0;t<a.length;t++)a[t].style.display="none"}
+      ,i=function(n){
+        var r=e.querySelectorAll(a)||[];
+        for(t=0;t<r.length;t++){
+          var i=r[t],s=i.className.replace("tab-active","").trim();
+          i.className=s}
+        o(),n.className+=" tab-active";
+        var l=n.getAttribute("href"),c=e.querySelector(l);
+        c&&(c.style.display="")}
+      ,s=e.querySelector(".tab-active"+a);
+      s=s||e.querySelector(a),s&&i(s),e.addEventListener("click",function(t){
+        var e=t.target;
+        r.call(e,a)&&i(e)}
+                                                        )}
+     .bind(items[i]))();
+  }
+</script>
+<style>* {
+  box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+  }
+  .form{
+    border-radius:3px;
+    padding:10px 15px;
+    background-color:rgba(0,0,0,0.2);
+  }
+  .input{
+    width:100%;
+    margin-bottom:15px;
+    padding:7px 10px;
+    border-radius:2px;
+    color:#fff;
+    background-color:#554c57;
+    border:none;
+  }
+  .label{
+    width:100%;
+    display:block;
+  }
+  .button{
+    width:100%;
+    margin:15px 0;
+    background-color:#785580;
+    border:none;
+    color:#fff;
+    border-radius:2px;
+    padding:7px 10px;
+    font-size:1em;
+    cursor:pointer;
+  }
+  .row{
+    display:flex;
+    justify-content:flex-start;
+    align-items:stretch;
+    flex-wrap:nowrap;
+    padding:10px;
+  }
+  .cell{
+    min-height:75px;
+    flex-grow:1;
+    flex-basis:100%;
+  }
+  #ie8cc{
+    flex-basis:98.4%;
+  }
+  #itpel{
+    height:812px;
+  }
+  #imiat{
+    padding:10px;
+    text-align:center;
+    float:none;
+  }
+  .tab{
+    text-decoration:none;
+    color:inherit;
+    padding:7px 14px;
+    transition:opacity 0.3s;
+    display:inline-block;
+    border-radius:3px;
+    margin-right:10px;
+  }
+  .tab.tab-active{
+    background-color:#0d94e6;
+    color:white;
+  }
+  .tab-content{
+    padding:6px 12px;
+    min-height:100px;
+    animation:fadeEffect 1s;
+  }
+  .tooltip-component{
+    position:relative;
+    display:inline-block;
+    vertical-align:top;
+  }
+  .tooltip-component--empty{
+    width:50px;
+    height:50px;
+  }
+  .tooltip-component__body, [data-tooltip]::after{
+    font-family:Helvetica, sans-serif;
+    background:rgba(55, 61, 73, 0.95);
+    border-radius:3px;
+    bottom:100%;
+    color:#fff;
+    content:attr(data-tooltip);
+    display:block;
+    font-size:12px;
+    left:50%;
+    line-height:normal;
+    max-width:32rem;
+    opacity:0;
+    overflow:hidden;
+    padding:8px 16px;
+    pointer-events:none;
+    position:absolute;
+    text-overflow:ellipsis;
+    transform:translate(-50%, 0);
+    transition:opacity 0.25s, transform 0.25s;
+    white-space:nowrap;
+    box-sizing:border-box;
+    z-index:10;
+  }
+  [data-tooltip-visible=true]::after, [data-tooltip]:focus::after, [data-tooltip]:hover::after{
+    opacity:1;
+    transform:translate(-50%, -0.5rem);
+  }
+  [data-tooltip-pos=right]::after{
+    bottom:50%;
+    left:100%;
+    transform:translate(0, 50%);
+  }
+  [data-tooltip-pos=right]:focus::after, [data-tooltip-pos=right]:hover::after, [data-tooltip-visible=true][data-tooltip-pos=right]::after{
+    transform:translate(0.5rem, 50%);
+  }
+  [data-tooltip-pos=bottom]::after{
+    bottom:auto;
+    top:100%;
+    transform:translate(-50%, 0);
+  }
+  [data-tooltip-pos=bottom]:focus::after, [data-tooltip-pos=bottom]:hover::after, [data-tooltip-visible=true][data-tooltip-pos=bottom]::after{
+    transform:translate(-50%, 0.5rem);
+  }
+  [data-tooltip-pos=left]::after{
+    bottom:50%;
+    left:auto;
+    right:100%;
+    transform:translate(0, 50%);
+  }
+  [data-tooltip-pos=left]:focus::after, [data-tooltip-pos=left]:hover::after, [data-tooltip-visible=true][data-tooltip-pos=left]::after{
+    transform:translate(-0.5rem, 50%);
+  }
+  [data-tooltip-length=small]::after{
+    white-space:normal;
+    width:80px;
+  }
+  [data-tooltip-length=medium]::after{
+    white-space:normal;
+    width:150px;
+  }
+  [data-tooltip-length=large]::after{
+    white-space:normal;
+    width:300px;
+  }
+  [data-tooltip-length=fit]::after{
+    white-space:normal;
+    width:100%;
+  }
+  // IE 11 bugfix
+  button[data-tooltip]{
+    overflow:visible;
+  }
+  .tooltip-component{
+    position:relative;
+    display:inline-block;
+    vertical-align:top;
+  }
+  .tooltip-component--empty{
+    width:50px;
+    height:50px;
+  }
+  .tooltip-component__body, [data-tooltip]::after{
+    font-family:Helvetica, sans-serif;
+    background:rgba(55, 61, 73, 0.95);
+    border-radius:3px;
+    bottom:100%;
+    color:#fff;
+    content:attr(data-tooltip);
+    display:block;
+    font-size:12px;
+    left:50%;
+    line-height:normal;
+    max-width:32rem;
+    opacity:0;
+    overflow:hidden;
+    padding:8px 16px;
+    pointer-events:none;
+    position:absolute;
+    text-overflow:ellipsis;
+    transform:translate(-50%, 0);
+    transition:opacity 0.25s, transform 0.25s;
+    white-space:nowrap;
+    box-sizing:border-box;
+    z-index:10;
+  }
+  [data-tooltip-visible=true]::after, [data-tooltip]:focus::after, [data-tooltip]:hover::after{
+    opacity:1;
+    transform:translate(-50%, -0.5rem);
+  }
+  [data-tooltip-pos=right]::after{
+    bottom:50%;
+    left:100%;
+    transform:translate(0, 50%);
+  }
+  [data-tooltip-pos=right]:focus::after, [data-tooltip-pos=right]:hover::after, [data-tooltip-visible=true][data-tooltip-pos=right]::after{
+    transform:translate(0.5rem, 50%);
+  }
+  [data-tooltip-pos=bottom]::after{
+    bottom:auto;
+    top:100%;
+    transform:translate(-50%, 0);
+  }
+  [data-tooltip-pos=bottom]:focus::after, [data-tooltip-pos=bottom]:hover::after, [data-tooltip-visible=true][data-tooltip-pos=bottom]::after{
+    transform:translate(-50%, 0.5rem);
+  }
+  [data-tooltip-pos=left]::after{
+    bottom:50%;
+    left:auto;
+    right:100%;
+    transform:translate(0, 50%);
+  }
+  [data-tooltip-pos=left]:focus::after, [data-tooltip-pos=left]:hover::after, [data-tooltip-visible=true][data-tooltip-pos=left]::after{
+    transform:translate(-0.5rem, 50%);
+  }
+  [data-tooltip-length=small]::after{
+    white-space:normal;
+    width:80px;
+  }
+  [data-tooltip-length=medium]::after{
+    white-space:normal;
+    width:150px;
+  }
+  [data-tooltip-length=large]::after{
+    white-space:normal;
+    width:300px;
+  }
+  [data-tooltip-length=fit]::after{
+    white-space:normal;
+    width:100%;
+  }
+  // IE 11 bugfix
+  button[data-tooltip]{
+    overflow:visible;
+  }
+  .tooltip-component{
+    position:relative;
+    display:inline-block;
+    vertical-align:top;
+  }
+  .tooltip-component--empty{
+    width:50px;
+    height:50px;
+  }
+  .tooltip-component__body, [data-tooltip]::after{
+    font-family:Helvetica, sans-serif;
+    background:rgba(55, 61, 73, 0.95);
+    border-radius:3px;
+    bottom:100%;
+    color:#fff;
+    content:attr(data-tooltip);
+    display:block;
+    font-size:12px;
+    left:50%;
+    line-height:normal;
+    max-width:32rem;
+    opacity:0;
+    overflow:hidden;
+    padding:8px 16px;
+    pointer-events:none;
+    position:absolute;
+    text-overflow:ellipsis;
+    transform:translate(-50%, 0);
+    transition:opacity 0.25s, transform 0.25s;
+    white-space:nowrap;
+    box-sizing:border-box;
+    z-index:10;
+  }
+  [data-tooltip-visible=true]::after, [data-tooltip]:focus::after, [data-tooltip]:hover::after{
+    opacity:1;
+    transform:translate(-50%, -0.5rem);
+  }
+  [data-tooltip-pos=right]::after{
+    bottom:50%;
+    left:100%;
+    transform:translate(0, 50%);
+  }
+  [data-tooltip-pos=right]:focus::after, [data-tooltip-pos=right]:hover::after, [data-tooltip-visible=true][data-tooltip-pos=right]::after{
+    transform:translate(0.5rem, 50%);
+  }
+  [data-tooltip-pos=bottom]::after{
+    bottom:auto;
+    top:100%;
+    transform:translate(-50%, 0);
+  }
+  [data-tooltip-pos=bottom]:focus::after, [data-tooltip-pos=bottom]:hover::after, [data-tooltip-visible=true][data-tooltip-pos=bottom]::after{
+    transform:translate(-50%, 0.5rem);
+  }
+  [data-tooltip-pos=left]::after{
+    bottom:50%;
+    left:auto;
+    right:100%;
+    transform:translate(0, 50%);
+  }
+  [data-tooltip-pos=left]:focus::after, [data-tooltip-pos=left]:hover::after, [data-tooltip-visible=true][data-tooltip-pos=left]::after{
+    transform:translate(-0.5rem, 50%);
+  }
+  [data-tooltip-length=small]::after{
+    white-space:normal;
+    width:80px;
+  }
+  [data-tooltip-length=medium]::after{
+    white-space:normal;
+    width:150px;
+  }
+  [data-tooltip-length=large]::after{
+    white-space:normal;
+    width:300px;
+  }
+  [data-tooltip-length=fit]::after{
+    white-space:normal;
+    width:100%;
+  }
+  // IE 11 bugfix
+  button[data-tooltip]{
+    overflow:visible;
+  }
+  .tooltip-component{
+    position:relative;
+    display:inline-block;
+    vertical-align:top;
+  }
+  .tooltip-component--empty{
+    width:50px;
+    height:50px;
+  }
+  .tooltip-component__body, [data-tooltip]::after{
+    font-family:Helvetica, sans-serif;
+    background:rgba(55, 61, 73, 0.95);
+    border-radius:3px;
+    bottom:100%;
+    color:#fff;
+    content:attr(data-tooltip);
+    display:block;
+    font-size:12px;
+    left:50%;
+    line-height:normal;
+    max-width:32rem;
+    opacity:0;
+    overflow:hidden;
+    padding:8px 16px;
+    pointer-events:none;
+    position:absolute;
+    text-overflow:ellipsis;
+    transform:translate(-50%, 0);
+    transition:opacity 0.25s, transform 0.25s;
+    white-space:nowrap;
+    box-sizing:border-box;
+    z-index:10;
+  }
+  [data-tooltip-visible=true]::after, [data-tooltip]:focus::after, [data-tooltip]:hover::after{
+    opacity:1;
+    transform:translate(-50%, -0.5rem);
+  }
+  [data-tooltip-pos=right]::after{
+    bottom:50%;
+    left:100%;
+    transform:translate(0, 50%);
+  }
+  [data-tooltip-pos=right]:focus::after, [data-tooltip-pos=right]:hover::after, [data-tooltip-visible=true][data-tooltip-pos=right]::after{
+    transform:translate(0.5rem, 50%);
+  }
+  [data-tooltip-pos=bottom]::after{
+    bottom:auto;
+    top:100%;
+    transform:translate(-50%, 0);
+  }
+  [data-tooltip-pos=bottom]:focus::after, [data-tooltip-pos=bottom]:hover::after, [data-tooltip-visible=true][data-tooltip-pos=bottom]::after{
+    transform:translate(-50%, 0.5rem);
+  }
+  [data-tooltip-pos=left]::after{
+    bottom:50%;
+    left:auto;
+    right:100%;
+    transform:translate(0, 50%);
+  }
+  [data-tooltip-pos=left]:focus::after, [data-tooltip-pos=left]:hover::after, [data-tooltip-visible=true][data-tooltip-pos=left]::after{
+    transform:translate(-0.5rem, 50%);
+  }
+  [data-tooltip-length=small]::after{
+    white-space:normal;
+    width:80px;
+  }
+  [data-tooltip-length=medium]::after{
+    white-space:normal;
+    width:150px;
+  }
+  [data-tooltip-length=large]::after{
+    white-space:normal;
+    width:300px;
+  }
+  [data-tooltip-length=fit]::after{
+    white-space:normal;
+    width:100%;
+  }
+  // IE 11 bugfix
+  button[data-tooltip]{
+    overflow:visible;
+  }
+  @keyframes fadeEffect{
+    from{
+      opacity:0;
+    }
+    to{
+      opacity:1;
+    }
+  }
+  @media (max-width: 992px){
+    #ie8cc{
+      flex-basis:183%;
+    }
+    #itpel{
+      height:897px;
+    }
+  }
+  @media (max-width: 768px){
+    .row{
+      flex-wrap:wrap;
+    }
+  }
+</style>
