@@ -11,7 +11,7 @@
       </div>
       <div class="form-group">
         <label class="label">Vessel Name</label>
-        <input placeholder="Type here your name" class="input"/>
+        <input placeholder="Type here your name" class="input" id="FixtureSearch" />
       </div>
       <div data-tooltip="Please Enter The Fixture Number" data-tooltip-pos="top" id="irvb36" class="tooltip-component tooltip-component--empty">
       </div>
@@ -36,7 +36,7 @@
       <label class="label">Status</label>
       <input class="input"/>
       <div class="form-group">
-        <button type="submit" class="button">Search</button>
+        <button type="submit" class="button" onClick="myFunction()">Search</button>
       </div>
     </form>
     <div data-tabs="1" id="iqb6dr">
@@ -103,7 +103,21 @@
                                                         )}
      .bind(items[i]))();
   }
+  
+  function myFunction() {
+		 
+			 var vesselName = document.getElementById("FixtureSearch").value
+			 
+			var b = document.getElementById("FixtureSearch").value;
+			var b1 = document.getElementById("FixtureNumberSearch").value;
+			
+			url = 'https://hiteshsantwani.github.io/PluginDemo/Results.html?VesselName=' + encodeURIComponent(b) + '&FixtureNumber' + encodeURIComponent(b1);
+			document.location.href = url;
+        }
+  
 </script>
+
+
 <style>* {
   box-sizing: border-box;
   }
